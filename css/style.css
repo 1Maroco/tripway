@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-main: #eaeaea;
+    --cor-container: #dfdfdf;
+    --cor-destaque: #ffaa60;
+    --cor-nav: #3F3D3B;
+    --cor-texto: #6C6C6C;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: "Inria Serif";
+    color: var(--cor-texto);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.25);
+    flex-shrink: 0;
+    z-index: 1;
+    color: var(--cor-destaque);
+}
+
+header h1 {
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header img {
+    height: 82px;
+    width: 82px;
+}
+
+nav {
+    margin-right: 15px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    font-size: 24px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+}
+
+li img {
+    height: 32px;
+    width: 32px;
+}
+
+li a {
+    color: var(--cor-nav);
+    text-decoration: none;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background-color: var(--cor-main);
+    min-height: calc(100% - 112px);
+}
+
+.home {
+    display: flex;
+    align-items: stretch;
+    background-color: var(--cor-container);
+    max-height: 70vh;
+}
+
+.home-imagem {
+    flex: 0 0 40%;
+}
+
+.home-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    object-position: 50% 20%;
+}
+
+.home-texto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 4%;
+    font-size: 20px;
+}
+
+.home-texto img {
+    height: 92px;
+    width: 92px;
+}
+
+.home-texto h2 {
+    color: #000;
+    font-size: 48px;
+}
+
+.home-texto p {
+    font-size: 28px;
+}
+
+button {
+    background-color: var(--cor-destaque);
+    border: 0;
+    border-radius: 15px;
+    padding: 15px;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto;
+    font-family: "Inria Serif";
+    font-size: 20px;
+    color: var(--cor-texto);
+}
+
+footer {
+    flex-shrink: 0;
+}
