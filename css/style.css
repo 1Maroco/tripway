@@ -10,6 +10,7 @@
     --cor-destaque: #ffaa60;
     --cor-nav: #3F3D3B;
     --cor-texto: #6C6C6C;
+    --sombra: 0 8px 6px -6px rgba(0, 0, 0, 0.25);
 
 }
 
@@ -26,7 +27,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--sombra);
     flex-shrink: 0;
     z-index: 1;
     color: var(--cor-destaque);
@@ -156,6 +157,86 @@ button {
     font-family: "Inria Serif";
     font-size: 20px;
     color: var(--cor-texto);
+}
+
+.destinos {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    width: 100%;
+}
+
+.destino-box {
+    overflow: hidden;
+    flex: 1;
+    border-radius: 15px;
+    box-shadow: var(--sombra);
+    background-color: var(--cor-container);
+    max-width: 25%;
+    height: 55vh;
+}
+
+.destino-box > img {
+    height: 190px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.destino-box div, .pacote-card div {
+    padding: 20px;
+}
+
+.destino-box h2 {
+    color: black;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.destino-box h2 img {
+    width: 46px;
+    height: 46px;
+}
+
+.pacotes {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.pacote-card {
+    display: flex;
+    border-radius: 15px;
+    box-shadow: var(--sombra);
+    background-color: var(--cor-container);
+    width: 70vw;
+    height: 22vh;
+    overflow: hidden;
+}
+
+.pacote-card > img {
+    height: 100%;
+    width: 220px;
+}
+
+.pacote-card h2 {
+    color: black;
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.pacote-card h2 img {
+    width: 64px;
+    height: 64px;
 }
 
 footer {
