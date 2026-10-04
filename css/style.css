@@ -78,6 +78,10 @@ main {
     min-height: calc(100% - 112px);
 }
 
+section {
+    width: 100%;
+}
+
 .home {
     display: flex;
     align-items: stretch;
@@ -119,6 +123,26 @@ main {
 
 .home-texto p {
     font-size: 28px;
+}
+
+.contato-container {
+    width: 70vw;
+    margin: 0 auto;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato-container > div {
+    flex: 2;
+    border-right: #000 solid;
+    padding: 20px;
+}
+
+form {
+    flex: 3;
+    padding: 20px;
 }
 
 button {
