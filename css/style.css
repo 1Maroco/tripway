@@ -59,6 +59,12 @@ ul {
 li {
     display: flex;
     align-items: center;
+    border: transparent solid 2px;
+}
+
+li:hover, button:hover {
+    transition: 0.2s;
+    scale: 1.1;
 }
 
 li img {
@@ -69,6 +75,12 @@ li img {
 li a {
     color: var(--cor-nav);
     text-decoration: none;
+}
+
+li:has(a[aria-current="page"]) {
+    background-color: var(--cor-destaque);
+    padding: 10px;
+    border-radius: 15px;
 }
 
 main {
@@ -148,8 +160,11 @@ section {
     align-items: center;
     justify-content: space-around;
     padding: 30px;
-    text-align: justify;
     font-size: 30px;
+}
+
+.contato-container p {
+    text-align: justify;
 }
 
 .contato-container > div > img {
@@ -385,4 +400,8 @@ button {
 
 footer {
     flex-shrink: 0;
+    background-color: var(--cor-main);
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
 }
