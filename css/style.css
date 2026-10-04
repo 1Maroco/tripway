@@ -284,6 +284,10 @@ button {
     overflow: hidden;
 }
 
+.pacote-card p {
+    font-size: 17px;
+}
+
 .pacote-card > img {
     height: 100%;
     width: 220px;
