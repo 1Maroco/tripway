@@ -237,6 +237,11 @@ button {
     height: 55vh;
 }
 
+.destino-box p {
+    font-size: 20px;
+    text-align: justify;
+}
+
 .destino-box > img {
     height: 190px;
     object-fit: cover;
