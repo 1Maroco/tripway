@@ -4,54 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TripWay - Contato</title>
+    <link rel="stylesheet" href="../css/style.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>TripWay</h1>
+        <h1><img src="../images/plane-arrival-solid-full.svg">TripWay</h1>
         <nav>
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./destinos.html">Destinos</a></li>
-                <li><a href="./pacotes.html">Pacotes</a></li>
-                <li><a href="./contato.html">Contato</a></li>
+                <li><img src="../images/home.svg"><a href="../index.html">Home</a></li>
+                <li><img src="../images/destinos.svg"><a href="./destinos.html">Destinos</a></li>
+                <li><img src="../images/pacotes.svg"><a href="./pacotes.html">Pacotes</a></li>
+                <li><img src="../images/contato.svg"><a href="./contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section>
-            <h2>Faça sua reserva!</h2>
-            <p>Conte-nos para onde você quer ir e quando. Assim que recebermos sua solicitação, um de nossos consultores entrará em contato para montar o roteiro perfeito para você.</p>
-            <!-- imagem do contato entra aqui -->
-        </section>
 
-        <section>
-            <form action="#" method="post">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
+            <div class="contato-container">
+                    <div>
+                        <h2><img src="../images/mapa.svg" alt="">FAÇA SUA RESERVA!</h2>
+                        <p>Conte-nos para onde você quer ir e quando. Assim que recebermos sua solicitação, um de nossos consultores entrará em contato para montar o roteiro perfeito para você.</p>
+                        <img src="../images/contato.jpg" alt="">
+                    </div>
 
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
+                    <form action="#" method="post">
 
-                <label for="destino">Destino de interesse:</label>
-                <select id="destino" name="destino" required>
-                    <option value="">Selecione</option>
-                    <option value="destino1">Destino 1</option>
-                    <option value="destino2">Destino 2</option>
-                    <option value="destino3">Destino 3</option>
-                </select>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
 
-                <label for="data">Data:</label>
-                <input type="date" id="data" name="data" required>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
 
-                <label for="pessoas">Qnt. de pessoas:</label>
-                <input type="number" id="pessoas" name="pessoas" min="1" required>
+                        <label for="destino">Destino de interesse:</label>
+                        <select id="destino" name="destino" required>
+                            <option value="">Selecione</option>
+                            <option value="destino1">Destino 1</option>
+                            <option value="destino2">Destino 2</option>
+                            <option value="destino3">Destino 3</option>
+                        </select>
 
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem..."></textarea>
+                        <div>
+                            <div>
+                                <label for="data">Data:</label>
+                                <input type="date" id="data" name="data" required>
+                            </div>
 
-                <button type="submit">Enviar</button>
-            </form>
+                            <div>
+                                <label for="pessoas">Qnt. de pessoas:</label>
+                                <input type="number" id="pessoas" name="pessoas" min="1" required>
+                            </div>
+                        </div>
+
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem..."></textarea>
+
+                        <button type="submit">Enviar</button>
+
+                    </form>
+            </div>
         </section>
     </main>
 

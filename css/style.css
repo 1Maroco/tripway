@@ -126,6 +126,86 @@ section {
     font-size: 28px;
 }
 
+.contato-container {
+    width: 70vw;
+    margin: 0 auto;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-container);
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: var(--sombra);
+}
+
+.contato-container > div {
+    flex: 2;
+    border-right: #000 solid .5px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+    text-align: justify;
+    font-size: 30px;
+}
+
+.contato-container > div > img {
+    width: 80%;
+    box-shadow: var(--sombra);
+    border-radius: 15px;
+}
+
+form {
+    color: black;
+    font-size: 20px;
+    display: flex;
+    flex: 3;
+    height: 100%;
+    flex-direction: column;
+    padding: 50px 20px 50px 20px;
+    gap: 5px;
+}
+
+form > div {
+    display: flex;
+    gap: 10px;
+}
+
+form > div > div {
+    flex: 1;
+}
+
+input, select, textarea {
+    width: 100%;
+    height: 25px;
+    background-color: transparent;
+    border: 0;
+    border-bottom: solid 2px;
+}
+
+textarea {
+    flex: 1;
+    padding: 5px;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-bottom-color: var(--cor-destaque);
+    transition: .2s;
+}
+
+.contato-container h2, button {
+    text-transform: uppercase;
+}
+
+#data, #pessoas {
+    display: flex;
+    flex-direction: column;
+}
+
 button {
     background-color: var(--cor-destaque);
     border: 0;
@@ -136,7 +216,82 @@ button {
     margin: 30px auto;
     font-family: "Inria Serif";
     font-size: 20px;
-    color: var(--cor-texto);
+    width: 35%;
+    color: var(--cor-nav);
+}
+
+.destinos {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    width: 100%;
+}
+
+.destino-box {
+    overflow: hidden;
+    flex: 1;
+    border-radius: 15px;
+    box-shadow: var(--sombra);
+    background-color: var(--cor-container);
+    max-width: 25%;
+    height: 55vh;
+}
+
+.destino-box > img {
+    height: 190px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.destino-box div, .pacote-card div {
+    padding: 20px;
+}
+
+.destino-box h2, .pacote-card h2, .contato-container h2 {
+    color: black;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.destino-box h2, .contato-container h2 {
+    justify-content: center;
+}
+
+.destino-box h2 img, .contato-container h2 img {
+    width: 46px;
+    height: 46px;
+}
+
+.pacotes {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.pacote-card {
+    display: flex;
+    border-radius: 15px;
+    box-shadow: var(--sombra);
+    background-color: var(--cor-container);
+    width: 70vw;
+    height: 22vh;
+    overflow: hidden;
+}
+
+.pacote-card > img {
+    height: 100%;
+    width: 220px;
+}
+
+.pacote-card h2 img {
+    width: 64px;
+    height: 64px;
 }
 
 .destinos {
