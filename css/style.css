@@ -22,6 +22,8 @@ body {
     color: var(--cor-texto);
 }
 
+/* Header */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -74,7 +76,6 @@ li img {
 
 li a {
     color: var(--cor-nav);
-    text-decoration: none;
 }
 
 li:has(a[aria-current="page"]) {
@@ -82,6 +83,8 @@ li:has(a[aria-current="page"]) {
     padding: 10px;
     border-radius: 15px;
 }
+
+/* Corpo da página */
 
 main {
     flex: 1;
@@ -94,6 +97,42 @@ main {
 section {
     width: 100%;
 }
+
+/* Footer */
+
+footer {
+    flex-shrink: 0;
+    background-color: var(--cor-main);
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+/* Estilos compartilhados */
+
+.destino-box div, .pacote-card div {
+    padding: 20px;
+}
+
+.destino-box h2, .pacote-card h2, .contato-container h2 {
+    color: black;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.destino-box h2, .contato-container h2 {
+    justify-content: center;
+}
+
+.destino-box h2 img, .contato-container h2 img {
+    width: 46px;
+    height: 46px;
+}
+
+/* Index */
 
 .home {
     display: flex;
@@ -137,6 +176,8 @@ section {
 .home-texto p {
     font-size: 28px;
 }
+
+/* Página contato */
 
 .contato-container {
     width: 70vw;
@@ -221,19 +262,7 @@ input:focus, select:focus, textarea:focus {
     flex-direction: column;
 }
 
-button {
-    background-color: var(--cor-destaque);
-    border: 0;
-    border-radius: 15px;
-    padding: 15px;
-    cursor: pointer;
-    display: block;
-    margin: 30px auto;
-    font-family: "Inria Serif";
-    font-size: 20px;
-    width: 35%;
-    color: var(--cor-nav);
-}
+/* Página destinos */
 
 .destinos {
     display: flex;
@@ -263,27 +292,7 @@ button {
     width: 100%;
 }
 
-.destino-box div, .pacote-card div {
-    padding: 20px;
-}
-
-.destino-box h2, .pacote-card h2, .contato-container h2 {
-    color: black;
-    font-size: 32px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 10px;
-}
-
-.destino-box h2, .contato-container h2 {
-    justify-content: center;
-}
-
-.destino-box h2 img, .contato-container h2 img {
-    width: 46px;
-    height: 46px;
-}
+/* Página pacotes */
 
 .pacotes {
     display: flex;
@@ -318,90 +327,22 @@ button {
     height: 64px;
 }
 
-.destinos {
-    display: flex;
-    gap: 50px;
-    justify-content: center;
-    width: 100%;
-}
+/* Tags genéricas */
 
-.destino-box {
-    overflow: hidden;
-    flex: 1;
+button {
+    background-color: var(--cor-destaque);
+    border: 0;
     border-radius: 15px;
-    box-shadow: var(--sombra);
-    background-color: var(--cor-container);
-    max-width: 25%;
-    height: 55vh;
+    padding: 15px;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto;
+    font-family: "Inria Serif";
+    font-size: 20px;
+    width: 35%;
+    color: var(--cor-nav);
 }
 
-.destino-box > img {
-    height: 190px;
-    object-fit: cover;
-    width: 100%;
-}
-
-.destino-box div, .pacote-card div {
-    padding: 20px;
-}
-
-.destino-box h2 {
-    color: black;
-    font-size: 32px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    margin-bottom: 10px;
-}
-
-.destino-box h2 img {
-    width: 46px;
-    height: 46px;
-}
-
-.pacotes {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.pacote-card {
-    display: flex;
-    border-radius: 15px;
-    box-shadow: var(--sombra);
-    background-color: var(--cor-container);
-    width: 70vw;
-    height: 22vh;
-    overflow: hidden;
-}
-
-.pacote-card > img {
-    height: 100%;
-    width: 220px;
-}
-
-.pacote-card h2 {
-    color: black;
-    display: flex;
-    align-items: center;
-    font-size: 32px;
-    gap: 5px;
-    margin-bottom: 10px;
-}
-
-.pacote-card h2 img {
-    width: 64px;
-    height: 64px;
-}
-
-footer {
-    flex-shrink: 0;
-    background-color: var(--cor-main);
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 10px;
+a {
+    text-decoration: none;
 }
