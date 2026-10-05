@@ -49,6 +49,10 @@ nav {
     margin-right: 15px;
 }
 
+a {
+    text-decoration: none;
+}
+
 ul {
     display: flex;
     list-style: none;
@@ -74,7 +78,6 @@ li img {
 
 li a {
     color: var(--cor-nav);
-    text-decoration: none;
 }
 
 li:has(a[aria-current="page"]) {
@@ -272,7 +275,7 @@ button {
     font-size: 32px;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 5px;
     margin-bottom: 10px;
 }
 
@@ -311,86 +314,6 @@ button {
 .pacote-card > img {
     height: 100%;
     width: 220px;
-}
-
-.pacote-card h2 img {
-    width: 64px;
-    height: 64px;
-}
-
-.destinos {
-    display: flex;
-    gap: 50px;
-    justify-content: center;
-    width: 100%;
-}
-
-.destino-box {
-    overflow: hidden;
-    flex: 1;
-    border-radius: 15px;
-    box-shadow: var(--sombra);
-    background-color: var(--cor-container);
-    max-width: 25%;
-    height: 55vh;
-}
-
-.destino-box > img {
-    height: 190px;
-    object-fit: cover;
-    width: 100%;
-}
-
-.destino-box div, .pacote-card div {
-    padding: 20px;
-}
-
-.destino-box h2 {
-    color: black;
-    font-size: 32px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    margin-bottom: 10px;
-}
-
-.destino-box h2 img {
-    width: 46px;
-    height: 46px;
-}
-
-.pacotes {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.pacote-card {
-    display: flex;
-    border-radius: 15px;
-    box-shadow: var(--sombra);
-    background-color: var(--cor-container);
-    width: 70vw;
-    height: 22vh;
-    overflow: hidden;
-}
-
-.pacote-card > img {
-    height: 100%;
-    width: 220px;
-}
-
-.pacote-card h2 {
-    color: black;
-    display: flex;
-    align-items: center;
-    font-size: 32px;
-    gap: 5px;
-    margin-bottom: 10px;
 }
 
 .pacote-card h2 img {
