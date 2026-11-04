@@ -18,8 +18,10 @@ function precoPassagem() {
 
   const precoFinal = preco * pessoas * (1 - 0.0005 * milhas);
 
-  if (milhas <= 1000 && milhas >= 0) {
-    labelPreco.textContent = "Preço final: " + precoFinal;
+  if (destinoEscolhido.value === "" || pessoas < 1) {
+    labelPreco.textContent = "Preço final: escolha o destino e informe ao menos 1 pessoa";
+  } else if (milhas <= 1000 && milhas >= 0) {
+    labelPreco.textContent = "Preço final: " + precoFinal.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
   } else {
     labelPreco.textContent = "Preço final: quantidade de milhas inválida";
   }
