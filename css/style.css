@@ -451,6 +451,27 @@ button {
     width: 35%;
 }
 
+.btn-tema {
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin: 0;
+    padding: var(--espaco-p);
+    background-color: transparent;
+}
+
+.icone-sol {
+    display: none;
+}
+
+.tema-escuro .icone-sol {
+    display: block;
+}
+
+.tema-escuro .icone-lua {
+    display: none;
+}
+
 a {
     text-decoration: none;
 }
