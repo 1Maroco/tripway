@@ -16,13 +16,19 @@ function precoPassagem() {
   const pessoas = Number(qntPessoas.value);
   const milhas = Number(qntMilhas.value);
 
-  const precoFinal = preco*pessoas*(1-(0.0005*milhas));
-  console.log(precoFinal);
+  const precoFinal = preco * pessoas * (1 - 0.0005 * milhas);
+
+  if (milhas <= 1000 && milhas >= 0) {
+    labelPreco.textContent = "Preço final: " + precoFinal;
+  } else {
+    labelPreco.textContent = "Preço final: quantidade de milhas inválida";
+  }
 }
 
 const qntPessoas = document.getElementById("pessoas");
 const qntMilhas = document.getElementById("milhas");
 const destinoEscolhido = document.getElementById("destino");
+const labelPreco = document.getElementById("preco-final");
 
 qntPessoas.addEventListener("input", precoPassagem);
 qntMilhas.addEventListener("input", precoPassagem);
