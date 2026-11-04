@@ -13,7 +13,11 @@ function precoPassagem() {
       break;
   }
 
-  console.log(preco);
+  const pessoas = Number(qntPessoas.value);
+  const milhas = Number(qntMilhas.value);
+
+  const precoFinal = preco*pessoas*(1-(0.0005*milhas));
+  console.log(precoFinal);
 }
 
 const qntPessoas = document.getElementById("pessoas");
