@@ -56,3 +56,7 @@ tripway/
 ## Como Executar
 
 Baixe ou clone o repositório e abra o arquivo `index.html` no navegador.
+
+## Site Publicado
+
+https://1maroco.github.io/tripway/
