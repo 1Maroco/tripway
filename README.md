@@ -33,3 +33,26 @@ Também foram adicionados o logo clicável, o tema escuro e o cálculo do preço
 - Destinos
 - Pacotes
 - Contato
+
+
+## Estrutura de Pastas
+
+```text
+tripway/
+├── index.html
+├── pages/
+│   ├── destinos.html
+│   ├── pacotes.html
+│   └── contato.html
+├── css/
+│   └── style.css
+├── js/
+│   ├── milhas.js
+│   └── tema.js
+├── images/
+└── README.md
+```
+
+## Como Executar
+
+Baixe ou clone o repositório e abra o arquivo `index.html` no navegador.
