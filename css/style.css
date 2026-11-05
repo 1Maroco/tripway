@@ -650,3 +650,56 @@ button:focus-visible {
     }
 
 }
+
+:root {
+    --cor-sobre-destaque: #3F3D3B;
+}
+
+.tema-escuro {
+    --cor-fundo: #1c1b1a;
+    --cor-main: #242321;
+    --cor-container: #32302e;
+    --cor-nav: #eaeaea;
+    --cor-texto: #c9c7c4;
+    --cor-titulo: #fff;
+    --sombra: 0 8px 6px -6px rgba(0, 0, 0, 0.6);
+    color-scheme: dark;
+}
+
+body,
+main,
+footer {
+    transition: background-color var(--transicao), color var(--transicao);
+}
+
+nav a[aria-current="page"],
+button,
+.btn {
+    color: var(--cor-sobre-destaque);
+}
+
+.btn-secundario {
+    color: var(--cor-nav);
+}
+
+input,
+select,
+textarea {
+    color: inherit;
+}
+
+option {
+    background-color: var(--cor-container);
+}
+
+.tema-escuro nav img,
+.tema-escuro .home-texto img,
+.tema-escuro .destino-box h2 img,
+.tema-escuro .pacote-card h2 img,
+.tema-escuro .contato-container h2 img {
+    filter: invert(1);
+}
+
+.tema-escuro nav a[aria-current="page"] img {
+    filter: none;
+}
