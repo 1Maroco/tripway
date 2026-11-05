@@ -17,6 +17,8 @@ No Checkpoint 1, o foco foi a estrutura HTML, páginas, navegação, formulário
 
 No Checkpoint 2, o projeto foi evoluído com CSS, identidade visual, layout com Flexbox e responsividade.
 
+Também foram adicionados o logo clicável, o tema escuro e o cálculo do preço com desconto em milhas.
+
 ## Tecnologias Utilizadas
 
 - HTML5
