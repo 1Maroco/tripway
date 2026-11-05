@@ -46,9 +46,18 @@ header {
 
 header h1 {
     margin-left: 0.9375rem;
+}
+
+.logo {
     display: flex;
     align-items: center;
     gap: var(--espaco-p);
+    color: var(--cor-destaque);
+    transition: scale var(--transicao);
+}
+
+.logo:hover {
+    scale: 1.03;
 }
 
 header img {
